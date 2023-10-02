@@ -1,10 +1,14 @@
 type GreetProps = {
   name: string;
+  messageCount: number;
+  isLoggedIn: boolean;
 };
 export default function Greet(props: GreetProps) {
   return (
     <h1 className="text-3xl text-center">
-      Welcome {props.name}! You have 10 unread messages.
+      {props.isLoggedIn
+        ? "  Welcome {props.name}! You have {props.messageCount} unread messages."
+        : "Welcome Guest"}
     </h1>
   );
 }
