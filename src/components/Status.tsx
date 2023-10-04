@@ -15,6 +15,6 @@ export default function Status(props:StatusProps) {
     message = 'Error fetching data'
   }
   return (
-    <div>Status - {message}</div>
+    <div className="text-center">Status - {message}</div>
   )
 }
