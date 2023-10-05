@@ -1,4 +1,5 @@
 import { Button, ButtonWithEvent } from "./components/Button";
+import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -41,6 +42,7 @@ function App() {
           console.log("Changes", e);
         }}
       />
+      <Container styles={{padding:'1em', textAlign:'center', marginTop:'0.5em'}}/> 
     </div>
   );
 }
