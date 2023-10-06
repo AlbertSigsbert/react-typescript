@@ -1,14 +1,10 @@
-type PersonProps = {
-  name: {
-    first: string;
-    last: string;
-  };
-};
-export default function Person(props: PersonProps) {
+import { PersonProps } from "../Person.types";
+
+export default function Person({ name: { first, last } }: PersonProps) {
   return (
     <div>
       <h2 className="text-center text-2xl my-4">
-        {props.name.first} {props.name.last}
+        {first} {last}
       </h2>
     </div>
   );
